@@ -13,6 +13,7 @@ import BreedingManagement from './components/BreedingManagement';
 import KidManagement from './components/KidManagement';
 import RecordKeeping from './components/RecordKeeping';
 import LabourAndRoutine from './components/LabourAndRoutine';
+import BiosecurityAndHygiene from './components/BiosecurityAndHygiene';
 
 function App() {
   return (
@@ -58,9 +59,9 @@ function App() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/tasks">Tasks</Link>
                                 </li>
-                                {/*<li className="nav-item">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/biosecurity">Biosecurity</Link>
-                                </li> */}
+                                </li> 
                             </ul>
                         </div>
                     </div>
@@ -76,7 +77,7 @@ function App() {
                         <Route path="/kids" element={<KidManagement />} />
                         <Route path="/records" element={<RecordKeeping />} />
                         <Route path="/tasks" element={<LabourAndRoutine />} />
-                        {/*<Route path="/biosecurity" element={<BiosecurityAndHygiene />} /> */}
+                        <Route path="/biosecurity" element={<BiosecurityAndHygiene />} /> 
                     </Routes>
                 </div>
             </Router>
