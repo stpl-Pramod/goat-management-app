@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Dashboard from './components/Dashboard';
 import HousingManagement from './components/HousingManagement';
+import FeedingManagement from './components/FeedingManagement';
 
 function App() {
   return (
@@ -34,10 +35,10 @@ function App() {
                                  <li className="nav-item">
                                     <Link className="nav-link" to="/housing">Housing</Link>
                                 </li>
-                                {/*<li className="nav-item">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/feeding">Feeding</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/*<li className="nav-item">
                                     <Link className="nav-link" to="/health">Health</Link>
                                 </li>
                                 <li className="nav-item">
@@ -64,8 +65,8 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Dashboard />} />
                         <Route path="/housing" element={<HousingManagement />} />
-                        {/* <Route path="/feeding" element={<FeedingManagement />} />
-                        <Route path="/health" element={<HealthManagement />} />
+                        <Route path="/feeding" element={<FeedingManagement />} />
+                        {/* <Route path="/health" element={<HealthManagement />} />
                         <Route path="/breeding" element={<BreedingManagement />} />
                         <Route path="/kids" element={<KidManagement />} />
                         <Route path="/records" element={<RecordKeeping />} />
