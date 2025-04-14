@@ -11,6 +11,7 @@ import FeedingManagement from './components/FeedingManagement';
 import HealthManagement from './components/HealthManagement';
 import BreedingManagement from './components/BreedingManagement';
 import KidManagement from './components/KidManagement';
+import RecordKeeping from './components/RecordKeeping';
 
 function App() {
   return (
@@ -50,10 +51,10 @@ function App() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/kids">Kids</Link>
                                 </li>
-                                {/*<li className="nav-item">
+                                <li className="nav-item">
                                     <Link className="nav-link" to="/records">Records</Link>
                                 </li>
-                                <li className="nav-item">
+                                {/*<li className="nav-item">
                                     <Link className="nav-link" to="/tasks">Tasks</Link>
                                 </li>
                                 <li className="nav-item">
@@ -72,8 +73,8 @@ function App() {
                         <Route path="/health" element={<HealthManagement />} />
                         <Route path="/breeding" element={<BreedingManagement />} />
                         <Route path="/kids" element={<KidManagement />} />
-                        {/*<Route path="/records" element={<RecordKeeping />} />
-                        <Route path="/tasks" element={<LabourAndRoutine />} />
+                        <Route path="/records" element={<RecordKeeping />} />
+                        {/*<Route path="/tasks" element={<LabourAndRoutine />} />
                         <Route path="/biosecurity" element={<BiosecurityAndHygiene />} /> */}
                     </Routes>
                 </div>
