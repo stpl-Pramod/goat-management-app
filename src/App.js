@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import '../src/shared/Sidebar.css';
 
 import Sidebar from './shared/Sidebar';
+import Header from './shared/Header';
 import Dashboard from './components/Dashboard';
 import HousingManagement from './components/HousingManagement';
 import FeedingManagement from './components/FeedingManagement';
@@ -21,7 +22,9 @@ function App() {
   return (
     <div className="App">
        <Router>
+        
                 <Sidebar />
+                <Header />
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
                     <div className="container">
                         <Link className="navbar-brand" to="/">GFMS</Link>
