@@ -4,7 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../src/shared/Sidebar.css';
 
+import Sidebar from './shared/Sidebar';
 import Dashboard from './components/Dashboard';
 import HousingManagement from './components/HousingManagement';
 import FeedingManagement from './components/FeedingManagement';
@@ -19,6 +21,7 @@ function App() {
   return (
     <div className="App">
        <Router>
+                <Sidebar />
                 <nav className="navbar navbar-expand-lg navbar-light bg-light mb-4">
                     <div className="container">
                         <Link className="navbar-brand" to="/">GFMS</Link>
@@ -62,6 +65,15 @@ function App() {
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/biosecurity">Biosecurity</Link>
                                 </li> 
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Reports
+                                    </a>
+                                    <ul className="dropdown-menu">
+                                        <li><a className="dropdown-item" href="#">Report 1</a></li>
+                                        <li><a className="dropdown-item" href="#">Report 2</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
